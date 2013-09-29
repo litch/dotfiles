@@ -6,6 +6,7 @@ DISABLE_LS_COLORS="true"
 plugins=(git bundler brew gem litch)
 
 export PATH="/usr/local/bin:$PATH"
+export EDITOR='mate -w'
 
 source $ZSH/oh-my-zsh.sh
 
