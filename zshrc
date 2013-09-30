@@ -1,14 +1,14 @@
+
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="litch"
 DISABLE_AUTO_UPDATE="true"
-DISABLE_LS_COLORS="true"
+DISABLE_LS_COLORS="false"
 
-plugins=(git bundler brew gem litch)
-
-export PATH="/usr/local/bin:$PATH"
-export EDITOR='mate -w'
+export PATH="/usr/local/bin:$HOME/bin:$HOME/.rvm/bin:$PATH"
+export EDITOR='subl -w'
 
 source $ZSH/oh-my-zsh.sh
 
-# for Homebrew installed rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+zplugins=(git bundler brew gem rbates sublime)
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
