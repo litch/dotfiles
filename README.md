@@ -1,8 +1,7 @@
 # Justin Litchfield Dot Files
 *Forked from Ryan Bates*
 
-These are config files to set up a system the way I like it. It now uses [Oh My ZSH](https://github.com/robbyrussell/oh-my-zsh). If you would like to see my old, custom Bash and ZSH config, check out [this branch](https://github.com/ryanb/dotfiles/tree/custom-bash-zsh)
-
+These are config files to set up a system the way I like it.
 I am running on Mac OS X, but it will likely work on Linux as well.
 
 
