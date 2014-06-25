@@ -5,9 +5,6 @@ PROMPT='${smiley} %3~$(git_prompt_info)%# '
 ZSH_THEME_GIT_PROMPT_PREFIX="["
 ZSH_THEME_GIT_PROMPT_SUFFIX="]"
 
-export AWS_ACCESS_KEY_ID=AKIAIBUKZHLECY6G7MVQ
-export AWS_SECRET_ACCESS_KEY=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
-
 update_stack() {
   aws --region='us-east-1' opsworks create-deployment --stack-id='cdafd383-48e6-4c81-9ed5-93d36708c245' --command='{"Name": "update_custom_cookbooks"}'
 }
