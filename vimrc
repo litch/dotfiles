@@ -205,3 +205,4 @@ function! OpenURL()
 endfunction
 map <Leader>w :call OpenURL()<CR>
 
+let g:jsx_ext_required = 0
