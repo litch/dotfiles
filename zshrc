@@ -9,10 +9,15 @@ plugins=(git bundler brew gem litch sublime)
 
 source $ZSH/oh-my-zsh.sh
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+# added by Miniconda3 installer
+export PATH="/Users/litch/miniconda3/bin:$PATH"
 
-export PATH="/usr/local/terraform:$PATH"
+NPM_PACKAGES="${HOME}/.npm-packages"
 
+export PATH="$NPM_PACKAGES/bin:$PATH"
+export PATH="~/bin:$PATH"
+
+# Unset manpath so we can inherit from /etc/manpath via the `manpath` command
+unset MANPATH # delete if you already modified MANPATH elsewhere in your config
+export MANPATH="$NPM_PACKAGES/share/man:$(manpath)"
