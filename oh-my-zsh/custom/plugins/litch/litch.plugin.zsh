@@ -21,7 +21,7 @@ e() {
   vim ~/dotfiles/oh-my-zsh/custom/plugins/litch/litch.plugin.zsh
 }
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+# if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 export PGDATA='/usr/local/var/postgres'
 
@@ -29,3 +29,6 @@ export POSTURE=development
 
 export PATH="$HOME/miniconda3/bin:$HOME/.npm-packages/bin:$PATH"
 
+btc () {
+  curl -s http://api.coindesk.com/v1/bpi/currentprice.json | python -c "import json, sys; print(json.load(sys.stdin)['bpi']['USD']['rate'])"
+}
