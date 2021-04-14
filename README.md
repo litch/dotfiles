@@ -49,6 +49,16 @@ If you're using git, you'll notice the current branch name shows up in the promp
 
 There are several features enabled in Ruby's irb including history and completion. Many convenience methods are added as well such as "ri" which can be used to get inline documentation in IRB. See irbrc file for details.
 
+## TMUX Shell Install
+
+$ brew install ncurses
+$ /usr/local/opt/ncurses/bin/infocmp tmux-256color > ~/tmux-256color.info
+$ tic -xe tmux-256color tmux-256color.info
+# This creates a complied entry in ~/.terminfo
+$ infocmp tmux-256color | head
+#       Reconstructed via infocmp from file: /Users/libin/.terminfo/74/tmux-256color
+tmux-256color|tmux with 256 colors,
+
 
 ## Uninstall
 
